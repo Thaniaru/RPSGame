@@ -1,0 +1,35 @@
+Java Installation
+
+sudo apt-get update
+
+sudo apt-get install default-jdk
+ssudo apt-get update
+
+
+
+jenkins install
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+sudo apt-get update
+
+sudo apt-get install jenkins
+
+after installation go to aws console select your server and select security tap and click group security click inboud rules add all tcp port and save rules, 
+after that copy public ip address and paste into web browser (chrome) 
+including ip address for ex: 147.244.13.24:8080 (include :8080 end of your ip address.
+
+and then select and copy the red line file path and paste in to your Putty ubuntu screen and press enter
+ex: sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+copy the password and paste the password into your jenkins server admin password coloumn
+
+
+i-090cb92854de1bcb0 (Ubuntu Server)
+PublicIPs: 18.222.251.39    PrivateIPs: 172.31.38.238
+
+jenkins login
+copy ip address from ec2 instance for eg:  3.22.235.242:8080
+
